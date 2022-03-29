@@ -1,0 +1,82 @@
+.tours {
+  margin-top: 5%;
+
+  .tour-home {
+    max-width: $content-width;
+    min-width: 236px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+
+    .tour {
+      @include promo();
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/tour-01.jpg);
+      text-align: center;
+
+      .promo-text {
+        font-family: mySecondFont;
+        margin-bottom: 30px;
+        color: $site-white;
+
+        h1 {
+          font-size: 60px;
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+      }
+
+      .read-btn {
+        @include site-button();
+      }
+    }
+
+    #tour2 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/tour-02.jpg);
+    }
+
+    #tour3 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/tour-03.jpg);
+    }
+
+    #tour4 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/tour-04.jpg);
+    }
+
+    #tour5 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/tour-05.jpg);
+    }
+
+    #tour6 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/tour-06.jpg);
+    }
+
+    #tour7 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/tour-07.jpg);
+      margin-bottom: 10%;
+    }
+
+    #tour8 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/tour-08.jpg);
+      margin-bottom: 10%;
+    }
+
+    #tour9 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/tour-09.jpg);
+      margin-bottom: 10%;
+    }
+  }
+}

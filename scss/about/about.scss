@@ -1,0 +1,113 @@
+.about {
+  margin-top: 110px;
+  margin-bottom: 180px;
+
+  .about-header {
+    h1 {
+      margin-bottom: 2px;
+      font-family: mySecondFont, myThirdFont;
+      font-size: 60px;
+      font-style: bold;
+    }
+
+    p {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    .border-bottom {
+      width: 171px;
+      height: 2px;
+      background-color: #000;
+      margin-bottom: 3%;
+    }
+  }
+
+  .about-client-quotes {
+    margin-top: 107px;
+
+    .client-quote-title {
+      font-family: mySecondFont, myThirdFont;
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    .border-bottom-two {
+      width: 255px;
+      height: 2px;
+      background-color: #000;
+      margin-bottom: 3%;
+    }
+
+    .client-box {
+      max-width: 722px;
+      display: flex;
+      position: relative;
+      margin-bottom: 30px;
+
+      .client-image {
+        width: 260px;
+        height: 150px;
+        overflow: hidden;
+        margin-right: 21px;
+
+        img {
+          width: 100%;
+        }
+      }
+      .client-quote {
+        max-width: 440px;
+        margin-bottom: 20px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 16px;
+        font-style: italic;
+      }
+
+      .client-name {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: $site-blue;
+        font-family: mySecondFont;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// media query that breaks at
+@media all and (max-width: 800px) {
+  .about {
+    text-align: center;
+    flex-direction: column;
+    .about-header {
+      .border-bottom {
+        margin: 0 auto;
+        margin-bottom: 3%;
+      }
+    }
+    .about-client-quotes {
+      .border-bottom-two {
+        margin: 0 auto;
+        margin-bottom: 3%;
+      }
+      .client-box {
+        flex-direction: column;
+        .client-image {
+          margin: 0 auto;
+        }
+        .client-quote {
+          margin: 0 auto;
+        }
+        .client-name {
+          position: relative;
+        }
+      }
+    }
+  }
+}

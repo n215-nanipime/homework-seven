@@ -1,0 +1,90 @@
+.specials {
+  margin-top: 110px;
+  margin-bottom: 180px;
+
+  .about-special-offers {
+    margin-top: 107px;
+
+    .offers-title {
+      font-family: mySecondFont, myThirdFont;
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    .border-bottom-two {
+      width: 255px;
+      height: 2px;
+      background-color: #000;
+      margin-bottom: 3%;
+    }
+
+    .specials-box {
+      max-width: 722px;
+      display: flex;
+      position: relative;
+      margin-bottom: 30px;
+
+      .offer-image {
+        width: 260px;
+        height: 150px;
+        overflow: hidden;
+        margin-right: 21px;
+
+        img {
+          width: 100%;
+        }
+      }
+      .offer-info {
+        max-width: 440px;
+        margin-bottom: 20px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 16px;
+        font-style: italic;
+        .special-offer-title {
+          font-family: mySecondFont, myThirdFont;
+          font-size: 40px;
+          font-weight: bold;
+          margin-bottom: 2px;
+        }
+        .discount {
+          font-size: 20px;
+          color: #ff7d38;
+        }
+        .discount-info {
+          margin-bottom: 15%;
+        }
+        .read-btn {
+          @include site-button();
+        }
+      }
+    }
+  }
+}
+
+// media query that breaks at
+@media all and (max-width: 800px) {
+  .specials {
+    text-align: center;
+    flex-direction: column;
+
+    .about-special-offers {
+      .border-bottom-two {
+        margin: 0 auto;
+        margin-bottom: 3%;
+      }
+
+      .specials-box {
+        flex-direction: column;
+
+        .offer-image {
+          margin: 0 auto;
+        }
+        .offer-info {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
